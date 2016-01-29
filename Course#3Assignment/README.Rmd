@@ -1,0 +1,56 @@
+---
+title: "README.md"
+output: pdf_document
+---
+
+**Data Science Scpecialization**
+
+**Course 3: Getting and cleaning the data - Project**
+
+**Author: Magdalena Grzmiel**
+
+*01/28/2016*
+
+
+### Project purpose
+The goal of this project was to work with and clean a datasets to create a tidy new dataset which could be later used in analysis. 
+The output from this projects are two datsets: 
+
+1. avg_and_std_body_acc.csv - which contains the data about mean and standard deviation of body acceleration for 30 subjects performing 6 diffrent activities.
+2. avg_body_acc_per_activity_type_per_subject.csv - which contains the average of linear body acceleration for each activity type and each subject.
+
+
+### Source datasets
+The source datasets used in this project come from following webside http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#.
+
+The source datasets contains measurments from the accelerometers from the Samsung Galaxy S smartphone taken during an experiment with 30 participants who performed 6 diffrent types of acticvities:  
+
+* walking
+* walking upstairs
+* walking downstairs
+* standing
+* sitting
+* laying
+
+For me information about source datasets please refer to this website:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
+
+
+
+### Performed work
+To get the tidy data, the following tasks has been performed:
+
+- for avg_and_std_body_acc.csv:
+
+    1. downloading and reading the source test and training data for measurments
+    2. downloading and resding the source data anout subjects (participants)
+    3. downloading and reading the source data about activities types.
+    4. merging tha data together
+    5. adding headers to the datasets
+    6. subseting only the required data - related to the mean and standart deviation of body accelaration in all 3 dimensions (X, Y, Z)
+    
+- avg_body_acc_per_activity_type_per_subject.csv
+
+    1. based on the data received from first step, the average and standart deviation has been calculated for each type of activities for each subject.  
+
+The details to reproduce receiving the tidy data can be done using the run_analysis.R file. 
+That file contains all of the steps which need to be perfromed in order to receive the two described above files. 
