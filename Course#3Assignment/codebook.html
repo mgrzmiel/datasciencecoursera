@@ -61,27 +61,72 @@ img {
 
 
 
-<div id="data-science-specialization" class="section level1">
-<h1><strong>Data Science Specialization</strong></h1>
-<div id="course-3-getting-and-cleaning-the-data---project" class="section level2">
-<h2><strong>Course 3: Getting and cleaning the data - Project</strong></h2>
+<div id="data-science-scpecialization" class="section level1">
+<h1><strong>Data Science Scpecialization</strong></h1>
 </div>
-<div id="author-magdalena-grzmiel" class="section level2">
-<h2><strong>Author: Magdalena Grzmiel</strong></h2>
-<p><em>01/28/2016</em></p>
-<div id="project-purpose" class="section level3">
-<h3>Project purpose</h3>
-<p>The goal of this project it to learn how to work with and clean a datasets to create a tidy new dataset which could be later used in analysis.</p>
-<p>The output from this projects are two datsets:</p>
-<ol style="list-style-type: decimal">
-<li>avg_and_std_body_acc.txt - which contains the data about mean and standard deviation of body acceleration in 3 directions (x, y, z) for 30 subjects performing 6 diffrent activities.</li>
-<li>avg_body_acc_per_activity_type_per_subject.txt - which contains the average of mean and standard deviation linear body acceleration for each activity type and each subject.</li>
-</ol>
+<div id="course-3-getting-and-cleaning-the-data---project" class="section level1">
+<h1><strong>Course 3: Getting and cleaning the data - Project</strong></h1>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>This document describes the two datasets received by running the code in run_analysis.R scripts.</p>
+<div id="first-dataset-avg_and_std_body_acc.txt-file" class="section level3">
+<h3>First dataset: avg_and_std_body_acc.txt file</h3>
+<p>This dataset contains the data about mean and standard deviation of body acceleration for 30 subjects performing 6 diffrent activities.</p>
 </div>
-<div id="source-datasets" class="section level3">
-<h3>Source datasets</h3>
-<p>The source datasets used in this project come from following websides: <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>#.</p>
-<p>The source datasets contains measurments from the accelerometers from the Samsung Galaxy S smartphone taken during an experiment with 30 participants who performed 6 diffrent types of acticvities:</p>
+<div id="variable" class="section level3">
+<h3>Variable</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Name of variable</th>
+<th align="left">Data Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">subjectNo</td>
+<td align="left">integer</td>
+<td align="left">The subject number represents for which participant the measurments were taken.</td>
+</tr>
+<tr class="even">
+<td align="left">activityType</td>
+<td align="left">factor</td>
+<td align="left">The type of activity during which the measurments were taken.</td>
+</tr>
+<tr class="odd">
+<td align="left">tBodyAccelerationMeanX</td>
+<td align="left">numeric</td>
+<td align="left">Mean of the body acceleration in x direction per participant per activity</td>
+</tr>
+<tr class="even">
+<td align="left">tBodyAccelerationMeanY</td>
+<td align="left">numeric</td>
+<td align="left">Mean of the body acceleration in y direction per participant per activity</td>
+</tr>
+<tr class="odd">
+<td align="left">tBodyAccelerationMeanZ</td>
+<td align="left">numeric</td>
+<td align="left">Mean of the body acceleration in z direction per participant per activity</td>
+</tr>
+<tr class="even">
+<td align="left">tBodyAccelerationStdX</td>
+<td align="left">numeric</td>
+<td align="left">Standart deviation of body acceleration in x direction per participant per activity</td>
+</tr>
+<tr class="odd">
+<td align="left">tBodyAccelerationStdY</td>
+<td align="left">numeric</td>
+<td align="left">Standart deviation of body acceleration in y direction per participant per activity</td>
+</tr>
+<tr class="even">
+<td align="left">tBodyAccelerationStdZ</td>
+<td align="left">numeric</td>
+<td align="left">Standart deviation of body acceleration in z direction per participant per activity</td>
+</tr>
+</tbody>
+</table>
+<p>There are 30 participants who took part in that experiemnt and they performed 6 different types of activities:</p>
 <ul>
 <li>walking</li>
 <li>walking upstairs</li>
@@ -90,27 +135,97 @@ img {
 <li>sitting</li>
 <li>laying</li>
 </ul>
-<p>For me information about source datasets please refer to this website:<a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>#</p>
 </div>
-<div id="performed-work" class="section level3">
-<h3>Performed work</h3>
-<p>To clean and get the tidy data, the following tasks have to been performed:</p>
-<ul>
-<li><p>for avg_and_std_body_acc.txt:</p>
-<ol style="list-style-type: decimal">
-<li>downloading and reading the source test and training data for measurments</li>
-<li>downloading and resding the source data about subjects (participants)</li>
-<li>downloading and reading the source data about activities types</li>
-<li>merging tha data together</li>
-<li>adding headers to the datasets</li>
-<li>subseting only the required data - related to the mean and standard deviation of body accelaration in all 3 dimensions (X, Y, Z)</li>
-</ol></li>
-<li><p>for avg_body_acc_per_activity_type_per_subject.txt:</p>
-<ol style="list-style-type: decimal">
-<li>based on the data received from first step, the average and standart deviation has been calculated for each type of activities for each subject.</li>
-</ol></li>
-</ul>
-<p>The details related to how to reproduce receiving the tidy and clean datasets can be done using the run_analysis.R file. Also, more details related to what actions were taken to received the clean and tidy data can be found in codebook.md. That file contains all of the steps which need to be perfromed in order to receive the two described files above.</p>
+<div id="performed-transformation" class="section level3">
+<h3>Performed Transformation</h3>
+<p>To received the clean and tidy dataset as above the following steps need to be performed:</p>
+<pre><code>1. download and read the source test and training data with the measurments
+2. merge the test and training data together
+3. download the file with names if the columns
+4. add the columns header with the column name
+5. download and read the source test and training data about the subject/participan information
+6. merge the train and test data about the subject into one dataset
+7. download and read the source test and training data about the activities type
+8. merge the train and test data about the activities type into one dataset
+9. add the dataset with activity type to the dataset with measurments - created at step 3
+10. add the dataset about the subject to the dataset created in step 9
+11. add the name for the first two column of the new dataset - subject number and activity type
+12. subset only the columns with subject no, activity type and the ones related to mean and standard deviation
+13. replace the activity number with the descriptive name
+14. rename the columns with more descriptive ones.
+15. convert the activity type from character to factor.
+16. save the received data frame as txt file</code></pre>
+</div>
+</div>
+<div id="second-dataset-avg_body_acc_per_activity_type_per_subject.txt" class="section level2">
+<h2>Second dataset: avg_body_acc_per_activity_type_per_subject.txt</h2>
+<p>This file contains the average of mean and standard deviation of linear body acceleration for each activity type and each subject.</p>
+<div id="variable-1" class="section level3">
+<h3>Variable</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Name of variable</th>
+<th align="left">Data Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">activityType</td>
+<td align="left">factor</td>
+<td align="left">The type of activity during which the measurments were taken.</td>
+</tr>
+<tr class="even">
+<td align="left">subjectNo</td>
+<td align="left">integer</td>
+<td align="left">The subject number represents for which participant the measurments were taken.</td>
+</tr>
+<tr class="odd">
+<td align="left">avgtBodyAccMeanX</td>
+<td align="left">numeric</td>
+<td align="left">Average of mean of body acceleration in x direction per activity type per user</td>
+</tr>
+<tr class="even">
+<td align="left">avgtBodyAccMeanY</td>
+<td align="left">numeric</td>
+<td align="left">Average of mean of body acceleration in y direction per activity type per user</td>
+</tr>
+<tr class="odd">
+<td align="left">avgtBodyAccMeanZ</td>
+<td align="left">numeric</td>
+<td align="left">Average of mean of body acceleration in z direction per activity type per user</td>
+</tr>
+<tr class="even">
+<td align="left">avgtBodyAccStdX</td>
+<td align="left">numeric</td>
+<td align="left">Average of standart deviation of body accelaration in x directon per activity type per user</td>
+</tr>
+<tr class="odd">
+<td align="left">avgtBodyAccStdY</td>
+<td align="left">numeric</td>
+<td align="left">Average of standart deviation of body accelaration in y directon per activity type per user</td>
+</tr>
+<tr class="even">
+<td align="left">avgtBodyAccStdZ</td>
+<td align="left">numeric</td>
+<td align="left">Average of standart deviation of body accelaration in z directon per activity type per user</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="performed-transformation-1" class="section level3">
+<h3>Performed Transformation</h3>
+<p>To get that dataset the follwoing steps need to be performed:</p>
+<pre><code>1. perform all 15 steps to receive the same dataset as above.
+2. using the ddply function calculate the average of the mean of body accelaration in x direction per activity type per user.
+3. using the ddply function calculate the average of the mean of body accelaration in y direction per activity type per user.
+4. using the ddply function calculate the average of the mean of body accelaration in z direction per activity type per user.
+5. using the ddply function calculate th eaverage of the  standart deviation of body accelaration in x direction per activity type per user.
+6. using the ddply function calculate th eaverage of the  standart deviation of body accelaration in y direction per activity type per user.
+7.  using the ddply function calculate th eaverage of the  standart deviation of body accelaration in z direction per activity type per user.
+8. join the dataframes received from step 3 to 7 into one dataframe
+9. save the received data frame as txt file</code></pre>
 </div>
 </div>
 </div>

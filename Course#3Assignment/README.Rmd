@@ -1,4 +1,7 @@
-#**Data Science Scpecialization**
+---
+output: pdf_document
+---
+#**Data Science Specialization**
 
 ##**Course 3: Getting and cleaning the data - Project**
 

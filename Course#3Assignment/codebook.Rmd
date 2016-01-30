@@ -1,19 +1,13 @@
----
-title: "coodbook.md"
-author: "Magdalena Grzmiel"
-date: "January 28, 2016"
-output: pdf_document
----
 
-**Data Science Scpecialization**
+#**Data Science Scpecialization**
 
-**Course 3: Getting and cleaning the data - Project**
+#**Course 3: Getting and cleaning the data - Project**
 
 
-### Introduction
+## Introduction
 This document describes the two datasets received by running the code in run_analysis.R scripts.
 
-##  First dataset: avg_and_std_body_acc.txt file
+## First dataset: avg_and_std_body_acc.txt file
 
 This dataset contains the data about mean and standard deviation of body acceleration for 30 subjects performing 6 diffrent activities.
 
