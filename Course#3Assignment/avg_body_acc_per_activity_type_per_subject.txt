@@ -1,4 +1,4 @@
-"activity_type" "subject_no" "avg_tBodyAcc_mean_X" "avg_tBodyAcc_mean_Y" "avg_tBodyAcc_mean_Z" "avg_tBodyAcc_std_X" "avg_tBodyAcc_std_Y" "avg_tBodyAcc_std_Z"
+"activityType" "subjectNo" "avgtBodyAccMeanX" "avgtBodyAccMeanY" "avgtBodyAccMeanZ" "avgtBodyAccStdX" "avgtBodyAccStdY" "avgtBodyAccStdZ"
 "LAYING" 1 0.22159824394 -0.0405139534294 -0.11320355358 -0.9280564692 -0.83682740562 -0.826061401628
 "LAYING" 2 0.281373403958333 -0.0181587397583333 -0.107245610416667 -0.974059464791667 -0.98027739875 -0.984233296875
 "LAYING" 3 0.275516852741935 -0.0189556785048387 -0.101300477506452 -0.982776639193548 -0.962057544516129 -0.96369103483871
